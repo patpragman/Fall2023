@@ -12,7 +12,7 @@ def draw_smile(frame_you_want_to_modify: ndarray,  # this is the opencv image pi
     It takes a frame, then draws some smiley faces on it over the people's faces it detects in the frames.
     """
 
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # convert the image to grayscale - note cv2.COLOR_BGR2GRAY
+    gray = cv2.cvtColor(frame_you_want_to_modify, cv2.COLOR_BGR2GRAY)  # convert the image to grayscale - note cv2.COLOR_BGR2GRAY
 
     # this returns a list of faces as coordinates
     faces = face_cascade.detectMultiScale(gray, # the gray scale image
