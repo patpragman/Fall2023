@@ -15,7 +15,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                     # for consistency
 
 # Create and train a logistic regression model
-lr_model = LogisticRegression(max_iter=1000)
+lr_model = LogisticRegression(max_iter=1000git p)
 lr_model.fit(X_train, y_train)
 
 # Make predictions on the test set
